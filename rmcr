@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in ./*.html; do 
+  tr -d "\r"  < $file > ${file%.html}.md;
+done
